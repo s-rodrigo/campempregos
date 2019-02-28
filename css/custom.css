@@ -2,6 +2,10 @@
     list-style: none;
     padding: 0;
     margin: 20px 0;
+    display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-between; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-between;
 }
 .details li {
     display: block;
@@ -191,4 +195,83 @@
 
 .centerize img {
 	margin-bottom: 20px;
+}
+/**/
+
+a:active {
+	outline:0;
+}
+
+h2 {
+	font-family:'Roboto', sans-serif;
+	font-weight:700;
+	line-height:1.1em;
+	color:#fff;
+	margin-bottom: 20px;
+}
+
+.row {
+	margin-bottom:30px;
+}
+
+section.callaction {
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(77,210,255,1) 0%, rgba(54,82,112,1) 100%);
+	padding:30px 0 0 0;
+}
+.cta-text {
+	margin-top:10px;
+	text-align: left;
+	color: #fff;
+}
+
+.cta-text h2 {
+	font-weight:900;
+	line-height:1.1em;
+}
+.cta-btn {
+	float:right;
+	padding:20px;
+	margin-top:10px;
+}
+
+@media (max-width: 767px) {
+
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+
+	.cta-text {
+		margin:0 auto;
+		text-align:center;	
+	}
+	
+	.cta-btn {
+		float: none;
+		text-align: center;
+	}
+
+}
+
+/* SEARCH CONTAINER */
+
+.search-container h4 {
+    font-size: 20px!important;
+    font-size: 1.3rem!important;   
+}
+
+.search-container h5 {
+    font-size: 14px!important;
+    font-size: 0.88rem!important;
+    color: #fff; 
+    font-weight: 200;  
+}
+
+.btn_search_mobile {
+    margin: auto;
 }

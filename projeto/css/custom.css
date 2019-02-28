@@ -1,0 +1,236 @@
+.text-header span{
+    color: #f5c018;
+    font-weight: 900;
+}
+
+body {
+	font-family:'Open Sans', Arial, sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.6em;
+	color:#656565;
+}
+
+.row {
+	margin-bottom:10px;
+}
+
+.client img {
+	opacity: 0.7;
+}
+
+.client img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-between; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-between;
+}
+.details li {
+    display: block;
+    line-height: 34px;
+    font-size: 14px;
+    color: #525151;
+}
+.details.cols-3 li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.details.cols-3:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.details.cols-3 li {
+    width: 33.333333%}
+@media (max-width:991px) {
+    .details.cols-3 li {
+    width: 50%}
+}@media (max-width:767px) {
+    .details.cols-3 li {
+    width: 100%}
+}.item-block {
+    display: block;
+    margin-top: 30px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    -webkit-transition: background-color .5s, -webkit-box-shadow .5s;
+    transition: background-color .5s, -webkit-box-shadow .5s;
+    -o-transition: box-shadow .5s, background-color .5s;
+    transition: box-shadow .5s, background-color .5s;
+	transition: box-shadow .5s, background-color .5s, -webkit-box-shadow .5s;
+	box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.12);
+}
+.item-block:hover {
+    -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .1);
+}
+.item-block .top {
+    padding: 10px 30px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.item-block .top .hgroup {
+    display: inline-block;
+}
+.item-block .top h4, .item-block .top h5 {
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+.item-block .top h4 {
+	color: #000;
+}
+.item-block .top h5 {
+    font-size: 13px;
+    margin-top: 0px;
+    color: #525151;
+}
+.item-block .top time {
+    display: inline-block;
+    float: right;
+    color: #525151;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.item-block .item-body {
+    padding: 20px 30px;
+    color: #525151;
+}
+.item-block .item-body p:last-of-type {
+    margin-bottom: 0;
+}
+.item-block footer {
+    background-color: #fdfdfd;
+    padding: 0px 0px;
+    line-height: 22px;
+}
+.item-block footer:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.item-block footer .details {
+    margin: 0;
+}
+@media (max-width:991px) {
+    .item-block {
+    margin-top: 20px;
+}
+.item-block .item-body, .item-block footer, .item-block .top {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.item-block .top h4 {
+    line-height: 37px;
+}
+}@media (max-width:767px) {
+    .item-block .top {
+    text-align: left;
+}
+.item-block .top time {
+    display: block;
+    float: none;
+    text-align: left;
+    margin-top: 5px;
+}
+.item-block .top .hgroup {
+    display: block!important;
+}
+.item-block .top h4 {
+    font-size: 18px!important;
+}
+.item-block footer .details {
+    text-align: center;
+}}
+/**/
+
+a:active {
+	outline:0;
+}
+
+.cta-btn {
+	text-align: center;
+}
+
+.callaction{
+	padding: 25px 15px 25px 15px;
+	background-image: url(http://brunonortonimoveis.com.br/wp-content/uploads/2017/03/fale-conosco-bn.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-size: cover;
+    background-position: center;
+}
+
+.callaction h2{
+	background-color: #f5c018b5;
+    color: #000;
+	font-weight: bold;
+}
+
+.btn-vaga{
+	color: #000;
+    background-color: #FFC107;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+	border-radius: 2px;
+	text-transform: uppercase;
+}
+
+.callaction p{
+	margin-bottom: 12px;
+	font-size: 18px;
+	background-color: #f5c018b5;
+    color: #000;
+}
+
+.callaction .col-lg-4{
+	margin: auto;
+}
+
+.mm-listview a{
+	color: #fff;
+}
+@media (max-width: 767px) {
+
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width: 680px){
+	.item-block .top h4 {
+		line-height: 27px;
+	}
+}
+
+.results{
+    background-color: #ff000096;
+    padding: 10px 5px 5px 5px;
+}
+
+.results h4{
+    font-size: 1.3em;
+    font-weight: 550;
+    color: #fff;
+}
+
+.results h5{
+    font-size: 1em;
+    color: #fff;
+}
