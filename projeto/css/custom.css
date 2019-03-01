@@ -220,17 +220,24 @@ a:active {
 }
 
 .results{
-    background-color: #ff000096;
+    background-color: #183abd1a;
     padding: 10px 5px 5px 5px;
+    margin-top: 55px;
 }
 
 .results h4{
     font-size: 1.3em;
     font-weight: 550;
-    color: #fff;
+    color: #000;
 }
 
 .results h5{
     font-size: 1em;
-    color: #fff;
+    color: #000;
+}
+
+@media (max-width:991px) {
+    .results {
+        margin-top: 40px;   
+    }
 }
