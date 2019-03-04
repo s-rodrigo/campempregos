@@ -16,16 +16,9 @@
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-    <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
     <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style-jobs.css" rel="stylesheet">
-	<link href="css/vendors.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="./css/style-list.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
@@ -39,11 +32,11 @@
 				<div class="col-lg-3 col-12">
 					<div id="logo">
 						<a href="index.html">
-							<img src="img/logo_sticky.svg" width="165" height="35" alt="" class="logo_sticky">
+							<img src="img/logo-white.png" width="145" height="54" alt="" class="logo_sticky">
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-9 col-12">
+				<div class="col-lg-9 col-12" style="margin: auto;">
 					<ul id="top_menu">
 						<li><a href="account.html" class="btn_add">Empresas</a></li>
 					</ul>
@@ -71,15 +64,15 @@
 		<!-- search_mobile -->
 		<div class="layer"></div>
 		<div id="search_mobile">
-			<a href="#" class="side_panel"><i class="icon_close"></i></a>
+			<a href="#" id="close-search-mobile" class="side_panel"><i class="fa fa-close"></i></a>
 			<div class="custom-search-input-2">
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="What are you looking..">
-					<i class="icon_search"></i>
+					<input class="form-control" type="text" placeholder="Ex. Administrativo">
+					<i class="fa fa-search"></i>
 				</div>
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="Where">
-					<i class="icon_pin_alt"></i>
+					<input class="form-control" type="text" placeholder="Cidade">
+					<i class="fa fa-map-marker"></i>
 				</div><!--
 				<select class="wide">
 					<option>All Categories</option>	
@@ -101,23 +94,23 @@
 		<div id="results">
 		   <div class="container">
 			   <div class="row">
-				   <div class="col-lg-3 col-md-4 col-10 search-container">
+				   <div class="col-lg-5 col-md-8 col-10 search-container">
 				   		<h4>Nutricionista clinica e hospitalar</h4>
 						<h5>145 resultados para sua pesquisa.</h5>
 				   </div>
-				   <div class="col-lg-9 col-md-8 col-2 btn_search_mobile_auto">
-					   <a href="#0" class="side_panel btn_search_mobile"></a>
+				   <div class="col-lg-7 col-md-4 col-2 btn_search_mobile_auto" style="margin:auto;">
+					   <a href="#0" class="side_panel btn_search_mobile" id="open-search-mobile"></a>
 						<div class="row no-gutters custom-search-input-2 inner">
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input class="form-control" type="text" placeholder="What are you looking for...">
-									<i class="icon_search"></i>
+									<input class="form-control" type="text" placeholder="Ex. Administrativo">
+									<i class="fa fa-search"></i>
 								</div>
 							</div>
 							<div class="col-lg-5">
 								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Where">
-									<i class="icon_pin_alt"></i>
+									<input class="form-control" type="text" placeholder="Cidade">
+									<i class="fa fa-map-marker"></i>
 								</div>
 							</div>
 							<!--
@@ -141,20 +134,11 @@
 		   </div>
 	   </div>
 		
-		<nav aria-label="breadcrumb" style="background-color: #e9ecef;">
-		   	<div class="container">
-			   <ol class="breadcrumb">
-			      <li class="breadcrumb-item"><a href="#">Início</a></li>
-			      <li class="breadcrumb-item active" aria-current="page">Vagas - página 1</li>
-			   </ol>
-		   </div>
-		</nav>
-		
 		<div class="container margin_60_35">
 			<div class="row">
 				<aside class="col-lg-3" id="sidebar">
 					<div id="filters_col">
-						<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt">Filtrar </a>
+						<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt">Filtrar <i class="fa fa-sliders" style="float: right;"></i></a>
 						<div class="collapse show" id="collapseFilters">
 							<div class="filter_type">
 								<h6>Cidade</h6>
@@ -258,9 +242,9 @@
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -270,17 +254,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -291,13 +275,13 @@
 						<!-- delete -->
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -307,17 +291,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -326,13 +310,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -342,17 +326,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -361,13 +345,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -377,17 +361,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -396,13 +380,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -412,17 +396,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -431,13 +415,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -447,17 +431,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -466,13 +450,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -482,17 +466,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -501,13 +485,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -517,17 +501,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -536,13 +520,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -552,17 +536,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -571,13 +555,13 @@
 						</div>
 
 						<div class="col-lg-12" style="padding: 10px;">
-							<a class="item-block" href="job-detail.html">
+							<a class="item-block" href="job-detail.html" style="margin-top: 0px;">
 							<div class="top">
 								<div class="hgroup">
 									<h4>Senior front-end developer</h4>
-									<h5><i class="icon-location-2"></i> Santa Barbara D'Oeste, SP</h5>
+									<h5><i class="fa fa-map-marker"></i> Santa Barbara D'Oeste, SP</h5>
 								</div>
-								<time datetime="2016-03-10 20:00"><i class="icon-calendar"></i> 11/01/2019 07:20</time>
+								<time datetime="2016-03-10 20:00"><i class="fa fa-calendar"></i> 11/01/2019 07:20</time>
 							</div>
 
 							<div class="item-body" style="text-align: justify;">
@@ -587,17 +571,17 @@
 							<footer style="text-align: center;">
 								<ul class="details cols-3">
 									<li>
-										<i class="icon-users"></i>
+										<i class="fa fa-users"></i>
 										<span> 16 vagas</span>
 									</li>
 
 									<li>
-										<i class="icon-briefcase"></i>
+										<i class="fa fa-briefcase"></i>
 										<span>CLT</span>
 									</li>
 
 									<li>
-										<i class="icon-accessibility"></i>
+										<i class="fa fa-accessibility"></i>
 										<span>PCD</span>
 									</li>
 								</ul>
@@ -699,9 +683,9 @@
 					<div class="collapse show" id="collapse_ft_4">
 						<div class="follow_us">
 							<ul>
-								<li><a href="#0"><i class="ti-facebook"></i></a></li>
-								<li><a href="#0"><i class="ti-linkedin"></i></a></li>
-								<li><a href="#0"><i class="ti-instagram"></i></a></li>
+								<li><a href="#0"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#0"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -722,18 +706,11 @@
 	</footer>
 	<!--/footer-->
 	
-	<div id="toTop"></div><!-- Back to top button -->
+	<div id="toTop"><i class="fa fa-chevron-up"></i></div><!-- Back to top button -->
 	
 	<!-- COMMON SCRIPTS -->
     <script src="js/common_scripts.js"></script>
 	<script src="js/functions.js"></script>
-	<script src="assets/validate.js"></script>
-	
-	<!-- Map -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/markerclusterer.js"></script>
-	<script src="js/map.js"></script>
-	<script src="js/infobox.js"></script>
 		
   
 </body>
